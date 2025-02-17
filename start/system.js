@@ -132,9 +132,9 @@ module.exports = client = async (client, m, chatUpdate, store) => {
                     mentionedJid: [sender],
                     externalAdReply: {
                         title: "— rimuru tempest",
-                        body: "— kiuur senpai",
+                        body: "— ALDY",
                         thumbnailUrl: "https://files.catbox.moe/wemxs3.jpg",
-                        sourceUrl: 'https://github.com/kiuur/tempest',
+                        sourceUrl: 'https://github.com/ALDY711/tempest',
                         renderLargerThumbnail: false,
                     }
                 }
@@ -284,14 +284,14 @@ commands:
                 
             case "public":{
                 if (!Access) return reply(mess.owner) 
-                client.public = true
+                client.public = false
                 reply(`successfully changed to ${command}`)
             }
             break
             
             case "self":{
                 if (!Access) return reply(mess.owner) 
-                client.public = false
+                client.public = true
                 reply(`successfully changed to ${command}`)
             }
             break
